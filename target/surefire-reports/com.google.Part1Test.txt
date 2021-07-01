@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.google.Part1Test
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 0.148 s <<< FAILURE! - in com.google.Part1Test
+com.google.Part1Test.testPauseAlreadyPausedVideo  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Pausing video: Amazing Cats"
+     but: was "pauseVideo needs implementation"
+	at com.google.Part1Test.testPauseAlreadyPausedVideo(Part1Test.java:202)
+
+com.google.Part1Test.testPlayRandomVideoStopsPreviousVideo  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Playing video: Amazing Cats
+Playing video: Video about nothing
+ ==> expected: <3> but was: <2>
+	at com.google.Part1Test.testPlayRandomVideoStopsPreviousVideo(Part1Test.java:127)
+
+com.google.Part1Test.testStopVideoTwice  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Playing video: Amazing Cats
+Stopping video: Amazing Cats
+
+Cannot stop video: No video is currently playing
+
+ ==> expected: <3> but was: <4>
+	at com.google.Part1Test.testStopVideoTwice(Part1Test.java:99)
+
+com.google.Part1Test.testPlayVideoStopPrevious  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Playing video: Amazing Cats
+Playing video: Funny Dogs
+ ==> expected: <3> but was: <2>
+	at com.google.Part1Test.testPlayVideoStopPrevious(Part1Test.java:64)
+
+com.google.Part1Test.testPauseVideo  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Pausing video: Amazing Cats"
+     but: was "pauseVideo needs implementation"
+	at com.google.Part1Test.testPauseVideo(Part1Test.java:160)
+
+com.google.Part1Test.testShowPlaying  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Currently playing: Amazing Cats (amazing_cats_video_id) [#cat #animal]"
+     but: was "showPlaying needs implementation"
+	at com.google.Part1Test.testShowPlaying(Part1Test.java:141)
+
+com.google.Part1Test.testContinueVideoNothingPlaying  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Cannot continue video: No video is currently playing"
+     but: was "continueVideo needs implementation
+"
+	at com.google.Part1Test.testContinueVideoNothingPlaying(Part1Test.java:242)
+
+com.google.Part1Test.testContinueVideo  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Pausing video: Amazing Cats"
+     but: was "pauseVideo needs implementation"
+	at com.google.Part1Test.testContinueVideo(Part1Test.java:223)
+
+com.google.Part1Test.testPauseVideoShowVideo  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Pausing video: Amazing Cats"
+     but: was "pauseVideo needs implementation"
+	at com.google.Part1Test.testPauseVideoShowVideo(Part1Test.java:172)
+
+com.google.Part1Test.testPauseVideoPlayVideo  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Playing video: Amazing Cats
+pauseVideo needs implementation
+Playing video: Amazing Cats
+showPlaying needs implementation
+ ==> expected: <5> but was: <4>
+	at com.google.Part1Test.testPauseVideoPlayVideo(Part1Test.java:185)
+
+com.google.Part1Test.testContinueVideoNotPaused  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Cannot continue video: Video is not paused"
+     but: was "continueVideo needs implementation"
+	at com.google.Part1Test.testContinueVideoNotPaused(Part1Test.java:234)
+
+com.google.Part1Test.testPauseVideoNothingPlaying  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Cannot pause video: No video is currently playing"
+     but: was "pauseVideo needs implementation
+"
+	at com.google.Part1Test.testPauseVideoNothingPlaying(Part1Test.java:210)
+
+com.google.Part1Test.testShowNothingPlaying  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "No video is currently playing"
+     but: was "showPlaying needs implementation
+"
+	at com.google.Part1Test.testShowNothingPlaying(Part1Test.java:149)
+
+com.google.Part1Test.testStopVideoNothingPlaying  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Cannot stop video: No video is currently playing"
+     but: was "Stopping video: Amazing Cats
+
+"
+	at com.google.Part1Test.testStopVideoNothingPlaying(Part1Test.java:110)
+
